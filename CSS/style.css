@@ -3,11 +3,18 @@
     width: 100%;
     height: 56px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     top: 0;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.479);
+    -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.479);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.479);
 
     z-index: 100;
 
@@ -29,7 +36,9 @@
 ul
 {
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 56px;
 }
 
@@ -70,6 +79,8 @@ nav
 
 ul
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -101,22 +112,30 @@ ul
 .navOption:hover
 {
     font-size: 26px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .navOption:not(:hover)
 {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
 .navOptionActive:hover
 {
     font-size: 26px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .navOptionActive:not(:hover)
 {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -130,6 +149,10 @@ ul
 	height: 70px;
 
 	background: rgb(32, 32, 32);
+
+	-webkit-transition: 0.2s;
+
+	-o-transition: 0.2s;
 
 	transition: 0.2s;
 
@@ -151,11 +174,29 @@ ul
     width: 100%;
     height: 512px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 	
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	
+	-webkit-box-direction: normal;
+	
+	    -ms-flex-direction: column;
+	
+	        flex-direction: column;
+
+    background: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(243, 75, 255)));
+
+    background: -o-linear-gradient(left, cyan , rgb(243, 75, 255));
 
     background: linear-gradient(to right, cyan , rgb(243, 75, 255));
 
@@ -207,6 +248,8 @@ ul
 
 .sec2div2
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -241,7 +284,8 @@ ul
 {
     height: 356px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .sec2p1
@@ -260,12 +304,15 @@ ul
 
 img
 {
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
 }
 
 img:hover
 {
-    filter: saturate(150%);
+    -webkit-filter: saturate(150%);
+            filter: saturate(150%);
 }
 
 #burgerDiv
@@ -320,6 +367,8 @@ footer
 
 .fdiv
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	margin: 45px 30px 0px 80px;
@@ -361,16 +410,26 @@ footer
 
 .fdiv1
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 
 	margin-right: 75px;
 }
 
 .fdiv2
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 
 	width: 196px;
 	height: 90px;
@@ -378,8 +437,13 @@ footer
 
 .fdiv0
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 
 	width: 196px;
 	height: 90px;
@@ -415,6 +479,8 @@ footer
 
 .fdiv3
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	margin-bottom: 9px;
@@ -448,9 +514,21 @@ footer
     width: 100%;
     height: 412px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    background: -webkit-gradient(linear, left top, right top, from(rgb(243, 75, 255)) , to(cyan));
+
+    background: -o-linear-gradient(left, rgb(243, 75, 255) , cyan);
 
     background: linear-gradient(to right, rgb(243, 75, 255) , cyan);
 }
@@ -461,9 +539,17 @@ footer
 
     background-color: rgb(32, 32, 32);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
     
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+    
+        -ms-flex-pack: justify;
+    
+            justify-content: space-between;
 }
 
 .cpdiv
@@ -484,7 +570,9 @@ footer
     
     border-style: solid;
     border-width: 3px;
-    border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
+    -o-border-image: -o-linear-gradient(left, cyan , rgb(243, 75, 255)) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(243, 75, 255))) 1;
+       border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
 
     border-top-width: 0px;
     border-right-width: 0px;
@@ -510,7 +598,9 @@ footer
 
     border-style: solid;
     border-width: 3px;
-    border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
+    -o-border-image: -o-linear-gradient(left, cyan , rgb(243, 75, 255)) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(243, 75, 255))) 1;
+       border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
 
     border-top-width: 0px;
     border-right-width: 0px;
@@ -534,7 +624,9 @@ footer
 
     border-style: solid;
     border-width: 3px;
-    border-image: linear-gradient(to right, cyan , rgb(75, 150, 255)) 1;
+    -o-border-image: -o-linear-gradient(left, cyan , rgb(75, 150, 255)) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(75, 150, 255))) 1;
+       border-image: linear-gradient(to right, cyan , rgb(75, 150, 255)) 1;
 
     border-top-width: 0px;
     border-right-width: 0px;
@@ -558,7 +650,9 @@ footer
 
     border-style: solid;
     border-width: 3px;
-    border-image: linear-gradient(to right, rgb(75, 150, 255) , rgb(243, 75, 255)) 1;
+    -o-border-image: -o-linear-gradient(left, rgb(75, 150, 255) , rgb(243, 75, 255)) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(rgb(75, 150, 255)) , to(rgb(243, 75, 255))) 1;
+       border-image: linear-gradient(to right, rgb(75, 150, 255) , rgb(243, 75, 255)) 1;
 
     border-top-width: 0px;
     border-right-width: 0px;
@@ -573,8 +667,13 @@ footer
 
 .cpSec1div2
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     float: right;
 
     width: 100%;
@@ -588,6 +687,10 @@ footer
     padding: 12px 96px 16px 100px  ;
 
     width: 60%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
 
     display: flex;
 }
@@ -604,10 +707,16 @@ footer
 
 	background-color: rgb(255, 255, 255);
     color: rgb(32, 32, 32);
+    background-image: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(243, 75, 255)));
+    background-image: -o-linear-gradient(left, cyan , rgb(243, 75, 255));
     background-image: linear-gradient(to right, cyan , rgb(243, 75, 255));
 	border-color: #494949;
 	border-width: 0px;
     border-radius: 4px;
+
+    -webkit-transition: 0.3s;
+
+    -o-transition: 0.3s;
 
     transition: 0.3s;
 
@@ -684,8 +793,13 @@ footer
 
 .cpSec1div6
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     gap: 24px;
 
@@ -697,19 +811,34 @@ footer
 
 .cpSec1div3
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     padding-top: 56px;
 }
 
 .cpSec1div4
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
 
     margin: 0px 0px 0px 0px;
 }
@@ -728,11 +857,18 @@ footer
 .burgerBar
 {
     display: none;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: fixed;
     top: 0;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 24px;
     z-index: 99;
 
@@ -741,7 +877,9 @@ footer
 
     border-style: solid;
     border-width: 6px;
-    border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
+    -o-border-image: -o-linear-gradient(left, cyan , rgb(243, 75, 255)) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(243, 75, 255))) 1;
+       border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
 
     border-top-width: 0px;
     border-right-width: 0px;
@@ -754,6 +892,8 @@ footer
 
 .toggle
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -764,6 +904,10 @@ footer
 
     font-size: 36px;
     color: rgb(255, 255, 255);
+
+    -webkit-transition: 0.2s;
+
+    -o-transition: 0.2s;
 
     transition: 0.2s;
 
@@ -778,6 +922,10 @@ footer
     font-size: 36px;
     color: rgb(255, 255, 255);
 
+    -webkit-transition: 0.2s;
+
+    -o-transition: 0.2s;
+
     transition: 0.2s;
 
     margin: 0px 0px 0px 0px;
@@ -786,22 +934,30 @@ footer
 .burgerOption:hover
 {
     font-size: 42px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .burgerOptionActive:hover
 {
     font-size: 42px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .burgerOption:not(:hover)
 {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
 .burgerOptionActive:not(:hover)
 {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -809,6 +965,10 @@ footer
 {
     height: 4px;
     width: 60%;
+
+    background-image: -webkit-gradient(linear, left top, right top, from(rgb(32, 32, 32)) , color-stop(white) , to(rgb(32, 32, 32)));
+
+    background-image: -o-linear-gradient(left, rgb(32, 32, 32) , white , rgb(32, 32, 32));
 
     background-image: linear-gradient(to right, rgb(32, 32, 32) , white , rgb(32, 32, 32));
 
@@ -818,6 +978,10 @@ footer
 .line
 {
     height: 4px;
+
+    background-image: -webkit-gradient(linear, left top, right top, from(rgb(32, 32, 32)) , color-stop(white) , to(rgb(32, 32, 32)));
+
+    background-image: -o-linear-gradient(left, rgb(32, 32, 32) , white , rgb(32, 32, 32));
 
     background-image: linear-gradient(to right, rgb(32, 32, 32) , white , rgb(32, 32, 32));
 
@@ -829,13 +993,25 @@ footer
     width: 100%;
     height: 412px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
 
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 
     background: rgb(121,211,242);
+    background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(121,211,242,1)), color-stop(79%, rgb(243, 75, 255)));
+    background: -o-linear-gradient(left, rgba(121,211,242,1) 26%, rgb(243, 75, 255) 79%);
     background: linear-gradient(90deg, rgba(121,211,242,1) 26%, rgb(243, 75, 255) 79%);
 
     padding-top: 56px;
@@ -865,6 +1041,8 @@ footer
 
 .sSec1div4
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     width: 85%;
@@ -875,15 +1053,21 @@ footer
     background-color: #121212;
 
     gap: 16px;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.479);
+    -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.479);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.479);
 
     margin: 0px 0px 56px 0px;
 }
 
 .sSec1div5
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .sSec1IMG1
@@ -894,7 +1078,9 @@ footer
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
 
-    object-fit: cover;
+    -o-object-fit: cover;
+
+       object-fit: cover;
 }
 
 .sSec1IMG2
@@ -905,7 +1091,9 @@ footer
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
 
-    object-fit: cover;
+    -o-object-fit: cover;
+
+       object-fit: cover;
 }
 
 .sSec1h3
@@ -957,6 +1145,10 @@ button
 
     float: right;
 
+    -webkit-transition: 0.2s;
+
+    -o-transition: 0.2s;
+
     transition: 0.2s;
 
     margin: 16px 36px 0px 10px;
@@ -969,19 +1161,31 @@ button
 
 .sSec1button1:not(:hover)
 {
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
     transition: 0.8s;
 }
 
 .sSec1div3
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .sSec1div6
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .aSec1div1
@@ -989,11 +1193,23 @@ button
     width: 100%;
     height: 412px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     padding-top: 56px;
+
+    background: -webkit-gradient(linear, left top, right top, from(rgb(243, 75, 255)) , to(cyan));
+
+    background: -o-linear-gradient(left, rgb(243, 75, 255) , cyan);
 
     background: linear-gradient(to right, rgb(243, 75, 255) , cyan);
 }
@@ -1008,9 +1224,16 @@ button
 
 .aSec1div3
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     padding-top: 56px;
     margin: 0px 0px 28px 0px;
@@ -1079,7 +1302,8 @@ button
 
 #aIMG1
 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.845);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.845);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.845);
 
     width: 452px;
     height: 512px;
@@ -1088,12 +1312,15 @@ button
 
     margin: 0px 0px 0px 0px;
 
-    object-fit: cover;
+    -o-object-fit: cover;
+
+       object-fit: cover;
 }
 
 #aIMG2
 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.519);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.519);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.519);
 
     width: 356px;
     height: 234px;
@@ -1102,23 +1329,39 @@ button
 
     margin: 0px 0px 0px 0px;
 
-    object-fit: cover;
+    -o-object-fit: cover;
+
+       object-fit: cover;
 }
 
 .aSec1div4
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     margin: 0px 0px 0px 28px;
 }
 
 .aSec1div5
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 
-    justify-content: center;
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
 }
 
 /* .aSec1shape1
