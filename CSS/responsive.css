@@ -49,7 +49,10 @@
 {
     .cpSec1div5
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .cpSec1div6
@@ -75,7 +78,10 @@
 {
     .aSec1div5
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .aSec1div2
@@ -109,10 +115,19 @@
 
     .aSec1div6
     {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
 
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .aSec1h1
@@ -135,10 +150,19 @@
 
     .sSec1div3
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
 
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+
+            -ms-flex-pack: justify;
+
+                justify-content: space-between;
     }
 
     .sSec1div2
@@ -148,10 +172,19 @@
 
     .sSec1div6
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
 
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+
+            -ms-flex-pack: justify;
+
+                justify-content: space-between;
     }
 
     .sSec1div4
@@ -159,13 +192,23 @@
         width: 48%;
         height: 696px;
 
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: column;
+
+                flex-direction: column;
     }
 
     .sSec1div5
     {
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
     }
 
@@ -222,7 +265,10 @@
 
     .cpSec1div5
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .cpSec1h2, .cpSec1p1, .cpSec1div6, .cpField1, .cpSec1div2, #textarea, .btn1, .cpSec1div4, .contactDiv
@@ -246,7 +292,9 @@
 
     ul
     {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .burgerButton
@@ -264,12 +312,18 @@
 
     .sSec1div3
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .sSec1div6
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .sSec1div2
@@ -321,8 +375,14 @@
         margin: 0px;
         padding-top: 56px;
 
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+
+            -ms-flex-pack: center;
+
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .cpSec1h1
@@ -332,14 +392,21 @@
 
     .cpSec1div4
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
     .cpField2
     {
         width: 100%;
 
-        border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
+        -o-border-image: -o-linear-gradient(left, cyan , rgb(243, 75, 255)) 1;
+
+           border-image: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(243, 75, 255))) 1;
+
+           border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
 
         margin: 0px 0px 12px 0px;
     }
@@ -348,7 +415,11 @@
     {
         width: 100%;
 
-        border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
+        -o-border-image: -o-linear-gradient(left, cyan , rgb(243, 75, 255)) 1;
+
+           border-image: -webkit-gradient(linear, left top, right top, from(cyan) , to(rgb(243, 75, 255))) 1;
+
+           border-image: linear-gradient(to right, cyan , rgb(243, 75, 255)) 1;
     }
 }
 
